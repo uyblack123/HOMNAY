@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label>Nhập A : </label>
+     <input id="123" type="text" placeholder="Nhập A"/>
+    <br>
+    <label>Nhập B : </label>
+     <input id="321" type="text" placeholder="Nhập B" />
+</form>
+    <button onclick="uyLe()" >
+        Tìm nghiệm
+    </button>
+<br>
+ <h3 id="uyle" ></h3>
+<script>
+    let a;
+    let b;
+    let c;
+
+   function uyLe(){
+       a = + document.getElementById("123").value;
+       b = + document.getElementById("321").value;
+       if (a==0 && b!=0){
+           c = 'ptvn'
+       }if (a==0 && b==0){
+           c = ' ptvsn'
+       }if (a!=0){
+           c= 'X = '+ -b/a
+       }
+       document.getElementById("uyle").innerHTML = c;
+   }
+  </script>
+</body>
+</html>
